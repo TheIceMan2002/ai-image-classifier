@@ -18,5 +18,4 @@ def predict(inp):
 
 gr.Interface(fn=predict,
              inputs=gr.Image(type="pil"),
-             outputs=gr.Label(num_top_classes=3),
-             examples=["C:/Users/benja/Coursera/Lion.jpg","C:/Users/benja/Coursera/Cheetah.jpg"]).launch()
+             outputs=gr.Label(num_top_classes=3)).launch()
